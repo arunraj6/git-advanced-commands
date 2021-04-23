@@ -9,4 +9,6 @@ Work with some advanced GIT commands
 ## General<span id="general"></span>
 
 
-### Start with default editor
+### default editor
+
+### default diff and merge tool
