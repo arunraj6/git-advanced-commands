@@ -15,6 +15,18 @@ Work with some advanced GIT commands
 
 ### default editor
 
+Setting the VS code as default editor.
+
+    git config --global core.editor code
+
+Command to view the config file in the default editor.
+
+    git config --global -e
+
+See the content inside the global config file without opening the file.
+
+    git config --global --list
+
 ### default diff and merge tool
 
 ### log
