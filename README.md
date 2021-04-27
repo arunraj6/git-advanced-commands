@@ -35,6 +35,12 @@ See the content inside the global config file without opening the file.
 
 ### amend
 
+Git amend commands can rewrites the history by updating the previous commits details like message, adding or removing a file, changing a part of the code, etc..
+
+Change the previous commit message
+
+    git commit —amend -m "updated message here"
+
 ### reflog
 
 ### clear unreachables
