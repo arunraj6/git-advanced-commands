@@ -98,6 +98,10 @@ this will completelly wipe out the changes from the staging area
 
 ## Revert <span id="revert"></span>
 
+revert command will help to undo a specific commits we made.
+
+    git revert 09c02f0
+
 ## Rebase <span id="rebase"></span>
 
 ## Cherry-pick <span id="cherry-pick"></span>
