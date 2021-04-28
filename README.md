@@ -57,17 +57,23 @@ reflog can also be used to clean unreachable commits.
 
 This command, the git creates a variable for the garbage collector for the burning pruning operation
 
-To clear the unreachable 
+To clear the unreachable
 
     git gc —prune=now
 
 The git log and reflog does the same except the case of unreachable
 
-### clear unreachables
+## Squash & Merge <span id="sqash-merge"></span>
 
-## Sqash & Merge <span id="sqash-merge"></span>
+squash command will take multiple commits and it will be combained to one commit.
 
-### Sqash
+    git checkout main
+    git merge --squash bugfix
+
+Consider if we have a series of commit in bugfix branch
+the above commands will squash all those commits into a single commit and will be merge into branch main
+
+This way we can keep the history in a concise way.
 
 ## Reset <span id="reset"></span>
 
