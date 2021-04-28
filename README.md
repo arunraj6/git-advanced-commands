@@ -77,9 +77,24 @@ This way we can keep the history in a concise way.
 
 ## Reset <span id="reset"></span>
 
-### soft
+reset command will be used to unstage the changes from the staging area.
+or we can use it for to go back to a particular commit and able to rework on that specific commit.
 
-### hard
+There are 2 type for reset aviliable
+
+### 1. soft
+
+this will unstage all the files from staged area or from a some specific commit
+
+    git reset head
+    git reset index.html
+    git reset 09c02f0
+### 2. hard
+
+this will completelly wipe out the changes from the staging area
+
+    git reset head --hard
+    git reset 09c02f0 --hard
 
 ## Revert <span id="revert"></span>
 
