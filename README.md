@@ -104,6 +104,8 @@ revert command will help to undo a specific commits we made.
 
 ## Rebase <span id="rebase"></span>
 
+rebase a branch will result in a linear commit history, its look like we never branch with master.
+
 ## Cherry-pick <span id="cherry-pick"></span>
 
 ## Tagging <span id="tag"></span>
