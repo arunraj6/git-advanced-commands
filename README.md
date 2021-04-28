@@ -108,6 +108,8 @@ rebase a branch will result in a linear commit history, its look like we never b
 
 ## Cherry-pick <span id="cherry-pick"></span>
 
+    git cherry-pick 09c02f0
+
 ## Tagging <span id="tag"></span>
 
 ### Light-weight
