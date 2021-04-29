@@ -11,7 +11,7 @@ Work with some advanced GIT commands
 - [Cherry pickking](#cherry-pick)
 - [Tagging](#tag)
 
-## Config file<span id="config"></span>
+## General<span id="config"></span>
 
 ### default editor
 
@@ -27,12 +27,9 @@ See the content inside the global config file without opening the file.
 
     git config --global --list
 
-### default diff and merge tool
-
 ### log
 
 ## Amend<span id="amend"></span>
-
 
 Git amend commands can rewrites the history by updating the previous commits details like message, adding or removing a file, changing a part of the code, etc..
 
@@ -42,7 +39,7 @@ Change the previous commit message
 
 All the amend original commits are called unreachable and will not be a part of any branch history.
 
-## reflog
+## Reflog
 
 reflog comments can be used to see the unreachanble commits.
 Normal log will not display the reachable commits.
@@ -82,14 +79,15 @@ or we can use it for to go back to a particular commit and able to rework on tha
 
 There are 2 type for reset aviliable
 
-### 1. soft
+### soft
 
 this will unstage all the files from staged area or from a some specific commit
 
     git reset head
     git reset index.html
     git reset 09c02f0
-### 2. hard
+
+### hard
 
 this will completelly wipe out the changes from the staging area
 
@@ -130,7 +128,7 @@ This tag will have few more additional informations
 
     git tag -a v1.0.1
 
-Some additionale commands related to tags
+### Some additionale commands related to tags
 
 This will display all the tags that are part of version 1
 
