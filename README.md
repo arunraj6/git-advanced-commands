@@ -29,6 +29,24 @@ See the content inside the global config file without opening the file.
 
 ### log
 
+To see the logs with complete details
+
+    git log
+
+To see the logs in a cleanear way
+
+    git log --oneline
+
+To see the logs with graph
+
+    git log --graph
+
+Apply filters on log
+
+    git log --online @{1.day.ago}
+
+Similarlly we can use differents other filters like weeks, min, hours, etc..
+
 ## Amend<span id="amend"></span>
 
 Git amend commands can rewrites the history by updating the previous commits details like message, adding or removing a file, changing a part of the code, etc..
