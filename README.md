@@ -112,6 +112,42 @@ rebase a branch will result in a linear commit history, its look like we never b
 
 ## Tagging <span id="tag"></span>
 
+A nice way to put a bookmark on the commits that are easy to find and also used to publish the infomation about the tag
+
+It’s common practice to prefix your version names with the letter v. Some good tag names might be v1.0 or v2.3.4.
+
+To list all the aviliable tags
+
+    git tag
+
 ### Light-weight
 
+    git tag v1.0.0
+
 ### Annotated
+
+This tag will have few more additional informations 
+
+    git tag -a v1.0.1
+
+Some additionale commands related to tags
+
+This will display all the tags that are part of version 1
+
+    git tag -l "v1*"
+
+Can tag a specific commit in the past
+
+    git tag v0.0.0 09c02f0
+
+Delate a tag
+
+    git tag -d v0.0.0
+
+push the tags to repo
+
+    git push --tags
+
+Commant that automatically push / pull the tags, don’t need to do separately
+
+     git config --global push.followTags true
