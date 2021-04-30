@@ -16,10 +16,12 @@ Work with some advanced GIT commands
 - [Tagging](#tag)
     - [Lightweight](#tag-lightweight)
     - [Annotated](#tag-annotated)
+    - [Additional commands](#tag-more)
+- [Contributors](#contributors)
 
-## General<span id="config"></span>
+## General <span id="config"></span>
 
-### default editor<span id="config-editor"></span>
+### default editor <span id="config-editor"></span>
 
 Set the <b>VS Code</b> as default editor:
 
@@ -33,7 +35,7 @@ See the content inside the global config file without opening the file:
 
     git config --global --list
 
-### logs<span id="config-log"></span>
+### logs <span id="config-log"></span>
 
 See the logs with complete details:
 
@@ -47,13 +49,13 @@ See the logs with the graph:
 
     git log --graph
 
-Apply different filters on logs:
+Apply different type of filters on logs:
 
-    $ git log --oneline @{1.day.ago}
-    $ git log --oneline -3
-    $ git log --author="John"
+    git log --oneline @{1.day.ago}
+    git log --oneline -3
+    git log --author="John"
 
-## Amend<span id="amend"></span>
+## Amend <span id="amend"></span>
 
 GIT `amend` commands can rewrite the history by updating the previous commits details like the message, adding or removing a file, changing a part of the code.
 
@@ -101,7 +103,7 @@ or allow to go back to a particular commit and able to rework that specific comm
 
 There are 2 types of `reset` available:
 
-### soft<span id="reset-soft"></span>
+### soft <span id="reset-soft"></span>
 
 Unstage all the files from the staged area:
 
@@ -147,17 +149,17 @@ List all the available tags:
 
 There are 2 types of tag available:
 
-### Lightweight<span id="tag-lightweight"></span>
+### Lightweight <span id="tag-lightweight"></span>
 
     git tag v1.0.0
 
-### Annotated<span id="tag-annotated"></span>
+### Annotated <span id="tag-annotated"></span>
 
 This tag will have a few more additional information than the Lightweight tag.
 
     git tag -a v1.0.1
 
-### Some additional commands related to tags
+### Some additional commands related to tags <span id="tag-more"></span>
 
 Display all the tags that are part of version 1:
 
@@ -178,3 +180,7 @@ Delete a tag:
 Command that automatically push/pull the tags, don’t need to do separately:
 
      git config --global push.followTags true
+
+## Contributors <span id="contributors"></span>
+
+- [@arunraj6](https://github.com/arunraj6)
