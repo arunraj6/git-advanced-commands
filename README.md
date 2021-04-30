@@ -33,11 +33,11 @@ To see the logs with complete details:
 
     git log
 
-To see the logs in a much cleanear way:
+To see the logs in a much cleaner way:
 
     git log --oneline
 
-To see the logs with graph:
+To see the logs with the graph:
 
     git log --graph
 
@@ -49,7 +49,7 @@ Apply different filters on logs:
 
 ## Amend<span id="amend"></span>
 
-Git amend commands can rewrites the history by updating the previous commits details like message, adding or removing a file, changing a part of the code, etc..
+Git amend commands can rewrite the history by updating the previous commits details like the message, adding or removing a file, changing a part of the code, etc...
 
 To change the previous commit message:
 
@@ -59,8 +59,8 @@ All the amend original commits are called <b> unreachable </b>and will not be a 
 
 ## Reflog
 
-reflog comments can be used to see the unreachanble commits.
-Normal log will not display the reachable commits.
+reflog comments can be used to see the unreachable commits.
+The normal log will not display the reachable commits.
 
     git reflog
 
@@ -78,26 +78,26 @@ To run the GC:
 
 ## Squash & Merge <span id="sqash-merge"></span>
 
-squash command will take multiple commits and combained into a single commit.
+squash command will take multiple commits and combined them into a single commit.
 
     git checkout main
     git merge --squash bugfix
 
-Consider, if we have a series of commit in bugfix branch
-the above commands will squash all those commits into a single commit and will be merge into branch main with a single new commit.
+Consider, if we have a series of commits in bugfix branch
+the above commands will squash all those commits into a single commit and will be merged into branch main with a single new commit.
 
-This way we can keep the history in a concise way.
+This way we can concisely keep the history.
 
 ## Reset <span id="reset"></span>
 
 reset command will be used to unstage the changes from the staging area
-or we can use it for to go back to a particular commit and able to rework on that specific commit.
+or we can use it to go back to a particular commit and able to rework that specific commit.
 
-There are 2 type for reset aviliable:
+There are 2 types of reset available:
 
 ### soft
 
-This will unstage all the files from staged area or from a some specific commit.
+This will unstage all the files from the staged area or some specific commit.
 
     git reset head
 
@@ -107,7 +107,7 @@ This will unstage all the files from staged area or from a some specific commit.
 
 ### hard
 
-This will completelly wipe out the changes from the staging area.
+This will completely wipe out the changes from the staging area.
 
     git reset head --hard
 
@@ -115,13 +115,13 @@ This will completelly wipe out the changes from the staging area.
 
 ## Revert <span id="revert"></span>
 
-revert command will help to undo a specific commits we made.
+revert command will help to undo a specific commit we made.
 
     git revert 09c02f0
 
 ## Rebase <span id="rebase"></span>
 
-rebase a branch will result in a linear commit history, its look like we never branch with master/ main.
+rebase a branch will result in a linear commit history, it looks like we never branch with master/ main.
 
 ## Cherry-pick <span id="cherry-pick"></span>
 
@@ -129,27 +129,27 @@ rebase a branch will result in a linear commit history, its look like we never b
 
 ## Tagging <span id="tag"></span>
 
-A nice way to put a bookmark on the commits that are easy to find and also used to publish the infomation about the tag.
+A nice way to put a bookmark on the commits that are easy to find and also used to publish the information about the tag.
 
 It’s common practice to prefix the version names with the letter v. Some good tag names might be v1.0 or v2.3.4.
 
-To list all the aviliable tags:
+To list all the available tags:
 
     git tag
 
-There are 2 type for tag aviliable:
+There are 2 types of tag available:
 
-### Light-weight
+### Lightweight
 
     git tag v1.0.0
 
 ### Annotated
 
-This tag will have few more additional informations than Light-weight tag.
+This tag will have a few more additional information than the Lightweight tag.
 
     git tag -a v1.0.1
 
-### Some additionale commands related to tags
+### Some additional commands related to tags
 
 This will display all the tags that are part of version 1:
 
@@ -163,10 +163,10 @@ Delate a tag:
 
     git tag -d v0.0.0
 
-push the tags to repo:
+push the tags to the repo:
 
     git push --tags
 
-Commant that automatically push / pull the tags, don’t need to do separately:
+The command that automatically push/pull the tags, don’t need to do separately:
 
      git config --global push.followTags true
