@@ -3,17 +3,23 @@
 Work with some advanced GIT commands
 
 - [General](#config)
+    - [Editor](#config-editor)
+    - [Logs](#config-log)
 - [Amend](#amend)
 - [Sqash & Merge](#sqash-merge)
 - [Reset](#reset)
+    - [Soft](#reset-soft)
+    - [Hard](#reset-hard)
 - [Revert](#revert)
 - [Rebase](#rebase)
 - [Cherry pickking](#cherry-pick)
 - [Tagging](#tag)
+    - [Lightweight](#tag-lightweight)
+    - [Annotated](#tag-annotated)
 
 ## General<span id="config"></span>
 
-### default editor
+### default editor<span id="config-editor"></span>
 
 Set the <b>VS Code</b> as default editor:
 
@@ -27,7 +33,7 @@ See the content inside the global config file without opening the file:
 
     git config --global --list
 
-### logs
+### logs<span id="config-log"></span>
 
 See the logs with complete details:
 
@@ -95,7 +101,7 @@ or allow to go back to a particular commit and able to rework that specific comm
 
 There are 2 types of `reset` available:
 
-### soft
+### soft<span id="reset-soft"></span>
 
 Unstage all the files from the staged area:
 
@@ -105,7 +111,7 @@ Unstage all the files from a specific commit:
 
     git reset 09c02f0
 
-### hard
+### hard<span id="reset-hard"></span>
 
 Completely wipe out the changes from the staging area:
 
@@ -141,11 +147,11 @@ List all the available tags:
 
 There are 2 types of tag available:
 
-### Lightweight
+### Lightweight<span id="tag-lightweight"></span>
 
     git tag v1.0.0
 
-### Annotated
+### Annotated<span id="tag-annotated"></span>
 
 This tag will have a few more additional information than the Lightweight tag.
 
