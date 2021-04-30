@@ -1,6 +1,6 @@
-# Advanced GIT commands
+# Advanced git commands
 
-Work with some advanced GIT commands
+Work with some advanced git commands
 
 - [General](#config)
     - [Editor](#config-editor)
@@ -57,7 +57,7 @@ Apply different type of filters on logs:
 
 ## Amend <span id="amend"></span>
 
-GIT `amend` commands can rewrite the history by updating the previous commits details like the message, adding or removing a file, changing a part of the code.
+git `amend` commands can rewrite the history by updating the previous commits details like the message, adding or removing a file, changing a part of the code.
 
     git commit —amend -m "updated message here"
 
@@ -67,8 +67,8 @@ All the amend original commits are called <b>unreachable</b> and will not be a p
 
 ## Reflog
 
-GIT `reflog` commands can be used to see the unreachable commits.
-The normal GIT `log` will not display the unreachable commits.
+git `reflog` commands can be used to see the unreachable commits.
+The normal git `log` will not display the unreachable commits.
 
     git reflog
 
@@ -86,7 +86,7 @@ To run the GC:
 
 ## Squash & Merge <span id="sqash-merge"></span>
 
-GIT `squash` command will take multiple commits and combined them into a single commit.
+git `squash` command will take multiple commits and combined them into a single commit.
 
     git checkout main
     git merge --squash bugfix
@@ -98,7 +98,7 @@ This way we can concisely keep the history.
 
 ## Reset <span id="reset"></span>
 
-GIT `reset` command will be used to unstage the changes from the staging area
+git `reset` command will be used to unstage the changes from the staging area
 or allow to go back to a particular commit and able to rework that specific commit.
 
 There are 2 types of `reset` available:
@@ -125,21 +125,23 @@ Completely wipe out the changes from a specific commit:
 
 ## Revert <span id="revert"></span>
 
-GIT `revert` command will help to undo a specific commit we made.
+git `revert` command will help to undo a specific commit we made.
 
     git revert 09c02f0
 
 ## Rebase <span id="rebase"></span>
 
-GIT `rebase` will result in a linear commit history, it looks like we never branch with master/ main.
+git `rebase` will result in a linear commit history, it looks like we never branch with master/ main.
 
 ## Cherry-pick <span id="cherry-pick"></span>
+
+git `cherry-pick` enables arbitrary Git commits to be picked by reference and appended to the current working HEAD.
 
     git cherry-pick 09c02f0
 
 ## Tagging <span id="tag"></span>
 
-GIT `tag` is a nice way to put a bookmark on the commits that are easy to find and also used to publish the information about the tag.
+git `tag` is a nice way to put a bookmark on the commits that are easy to find and also used to publish the information about the tag.
 
 It’s common practice to prefix the version names with the letter v. Some good tag names might be v1.0 or v2.3.4.
 
