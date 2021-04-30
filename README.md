@@ -15,11 +15,11 @@ Work with some advanced GIT commands
 
 ### default editor
 
-Setting the VS code as default editor:
+Set the <b>VS Code</b> as default editor:
 
     git config --global core.editor code
 
-Command to view the config file in the editor:
+View the config file in the editor:
 
     git config --global -e
 
@@ -29,29 +29,29 @@ See the content inside the global config file without opening the file:
 
 ### logs
 
-To see the logs with complete details:
+See the logs with complete details:
 
     git log
 
-To see the logs in a much cleaner way:
+See the logs in a much cleaner way:
 
     git log --oneline
 
-To see the logs with the graph:
+See the logs with the graph:
 
     git log --graph
 
 Apply different filters on logs:
 
-    git log --oneline @{1.day.ago}
-    git log --oneline -3
-    git log --author="John"
+    $ git log --oneline @{1.day.ago}
+    $ git log --oneline -3
+    $ git log --author="John"
 
 ## Amend<span id="amend"></span>
 
-Git amend commands can rewrite the history by updating the previous commits details like the message, adding or removing a file, changing a part of the code, etc...
+GIT `amend` commands can rewrite the history by updating the previous commits details like the message, adding or removing a file, changing a part of the code, etc...
 
-To change the previous commit message:
+Change the previous commit message:
 
     git commit —amend -m "updated message here"
 
@@ -101,7 +101,7 @@ This will unstage all the files from the staged area or some specific commit.
 
     git reset head
 
-    git reset index.html
+  or
 
     git reset 09c02f0
 
@@ -110,6 +110,8 @@ This will unstage all the files from the staged area or some specific commit.
 This will completely wipe out the changes from the staging area.
 
     git reset head --hard
+
+or
 
     git reset 09c02f0 --hard
 
