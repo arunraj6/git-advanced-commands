@@ -99,7 +99,7 @@ This way we can concisely keep the history.
 ## Reset <span id="reset"></span>
 
 git `reset` command will be used to unstage the changes from the staging area
-or allow to go back to a particular commit and able to rework that specific commit.
+or allow going back to a particular commit and able to rework that specific commit.
 
 There are 2 types of `reset` available:
 
@@ -179,7 +179,7 @@ Delete a tag:
 
     git push --tags
 
-Command that automatically push/pull the tags, don’t need to do separately:
+The command that automatically push/ pull the tags, don’t need to do separately:
 
      git config --global push.followTags true
 
