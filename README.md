@@ -91,8 +91,8 @@ git `squash` command will take multiple commits and combined them into a single 
     git checkout main
     git merge --squash bugfix
 
-Consider, if we have a series of commits in bugfix branch
-the above commands will squash all those commits into a single commit and will be merged into branch main with a single new commit.
+Consider, if we have a series of commits in `bugfix` branch
+the above commands will squash all those commits into a single commit and will be merged into branch `main` with a single new commit.
 
 This way we can concisely keep the history.
 
@@ -131,11 +131,11 @@ git `revert` command will help to undo a specific commit we made.
 
 ## Rebase <span id="rebase"></span>
 
-git `rebase` will result in a linear commit history, it looks like we never branch with master/ main.
+git `rebase` will result in a linear commit history, it looks like we never branch.
 
 ## Cherry-pick <span id="cherry-pick"></span>
 
-git `cherry-pick` enables arbitrary Git commits to be picked by reference and appended to the current working HEAD.
+git `cherry-pick` enables arbitrary git commits to be picked by reference and appended to the current working HEAD.
 
     git cherry-pick 09c02f0
 
@@ -143,13 +143,13 @@ git `cherry-pick` enables arbitrary Git commits to be picked by reference and ap
 
 git `tag` is a nice way to put a bookmark on the commits that are easy to find and also used to publish the information about the tag.
 
-It’s common practice to prefix the version names with the letter v. Some good tag names might be v1.0 or v2.3.4.
+It’s common practice to prefix the version names with the letter `v`. Some good tag names might be `v1.0` or `v2.3.4`.
 
 List all the available tags:
 
     git tag
 
-There are 2 types of tag available:
+There are 2 types of `tag` available:
 
 ### Lightweight <span id="tag-lightweight"></span>
 
@@ -157,7 +157,7 @@ There are 2 types of tag available:
 
 ### Annotated <span id="tag-annotated"></span>
 
-This tag will have a few more additional information than the Lightweight tag.
+This `tag` will have a few more additional information than the Lightweight tag.
 
     git tag -a v1.0.1
 
