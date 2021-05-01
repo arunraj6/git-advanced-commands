@@ -59,9 +59,9 @@ Apply different type of filters on logs:
 
 git `amend` commands can rewrite the history by updating the previous commits details like the message, adding or removing a file, changing a part of the code.
 
-    git commit —amend -m "updated message here"
+    git commit --amend -m "updated message here"
 
-The above command will change the commit message of the most recent commit. Also, it will take the present changes from the stage area if any, and add them to this amend commit.
+The above command will change the commit message of the most recent commit. Also, it will take the present changes from the stage area if any, and add them to this new amend commit.
 
 All the amend original commits are called <b>unreachable</b> and will not be a part of any branch history.
 
@@ -82,7 +82,7 @@ The above command creates a variable for the Garbage Collector for the pruning o
 
 To run the GC:
 
-    git gc —prune=now
+    git gc --prune=now
 
 ## Squash & Merge <span id="sqash-merge"></span>
 
