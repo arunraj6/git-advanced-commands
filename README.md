@@ -133,6 +133,21 @@ git `revert` command will help to undo a specific commit we made.
 
 git `rebase` will result in a linear commit history, it looks like we never branch.
 
+    # Create a feature branch based on master 
+    git checkout -b featureA 
+    # Edit files and do some commits
+    git commit -am "First" 
+    git commit -am "Second" 
+    # Switch to the master to add some changes
+    git checkout master
+    # Edit files and do some commits
+    git commit -am "Third" 
+    git commit -am "Fourth" 
+    # Now the master branch is 2 commits ahead 
+    # Switch to feature branch for the rebase to get a linear commit history
+    git checkout featureA
+    git rebase master
+
 ## Cherry-pick <span id="cherry-pick"></span>
 
 git `cherry-pick` enables arbitrary git commits to be picked by reference and appended to the current working HEAD.
