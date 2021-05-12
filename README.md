@@ -17,7 +17,8 @@ Work with some advanced git commands
     - [Lightweight](#tag-lightweight)
     - [Annotated](#tag-annotated)
     - [Additional commands](#tag-more)
-- [Contributors](#contributors)
+
+[Contributing to this repository](#contributing)
 
 ## General <span id="config"></span>
 
@@ -197,6 +198,13 @@ Delete a tag:
 The command that automatically push/ pull the tags, don’t need to do separately:
 
      git config --global push.followTags true
+
+## Contributing <span id="contributing"></span>
+
+### Start contributing right now:
+
+We accept different contributions, including some that don't require you to write a single line of code.
+For more details about this process, please check out [Getting Started with Contributing](/CONTRIBUTING.md).
 
 ## Contributors <span id="contributors"></span>
 
