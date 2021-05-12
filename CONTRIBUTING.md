@@ -20,7 +20,7 @@ Fork using the command line:
 Make your changes to the file(s) you'd like to update.
   
 ### Open a pull request
-When you're done making changes and you'd like to propose them for review.
+When you're done making changes and you'd like to propose them for review, use the [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
 ### Submit your PR & get it reviewed
 - Once you submit your PR, others from the Docs community will review it with you.
